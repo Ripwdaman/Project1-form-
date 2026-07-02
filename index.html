@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointment Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="form-container">
+      <div class="form-header">
+        <h1 style="color: #f195ac;">Appointment Form</h1>
+        <p style="margin-top: 10px;">Please fill out the form.</p>
+      </div>
+
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Ritik Khurana"
+            required
+          />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="ritikkhurana83@gmail.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="0000000000"
+              required
+            />
+          </div>
+        </div>
+
+        <div>
+          <label for="service">Select Service</label>
+          <select id="service" name="service" required style="margin-bottom: 30px;">
+            <option value="" disabled selected>Choose a service...</option>
+            <option value="consultation">General Consultation</option>
+            <option value="follow-up">Follow-up Visit</option>
+            <option value="support">Technical Support</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+
+          <div class="form-group">
+            <label for="countries">Select country</label>
+            <select id="countries" name="countries" required>
+              <option value="" disabled selected>Choose a country...</option>
+              <option value="usa">United States</option>
+              <option value="canada">Canada</option>
+              <option value="uk">United Kingdom</option>
+              <option value="australia">Australia</option>
+              <option value="india">India</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="notes">Special Notes / Comments</label>
+          <textarea
+            id="notes"
+            name="notes"
+            placeholder="Tell us anything else we should know ahead of your appointment..."
+          ></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Confirm Booking</button>
+      </form>
+    </div>
+  </body>
+</html>
